@@ -6,9 +6,9 @@ import org.springframework.stereotype.Service;
 
 import com.jacoste.galactic.repository.UserRepository;
 
-import fr.jacopo.tpbasicauthspring.entity.Role;
-import fr.jacopo.tpbasicauthspring.entity.Utilisateur;
-import fr.jacopo.tpbasicauthspring.repository.UtilisateurRepository;
+import com.jacoste.galactic.table.Role;
+import com.jacoste.galactic.table.User;
+import com.jacoste.galactic.repository.UserRepository;
 
 @Service
 public class DbInit implements CommandLineRunner{

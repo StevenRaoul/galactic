@@ -3,6 +3,8 @@ package com.jacoste.galactic.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import java.time.LocalDateTime;
 import java.util.List;
 
 import com.jacoste.galactic.service.FlightService;
@@ -24,6 +26,11 @@ public class FlightController {
     public List<Flight> getAllFights() {
         return flightService.getAllFights();
     }
+    
+    public List<Flight> getFlight(@RequestParam String arrival,
+            @RequestParam LocalDateTime departureTime,
+            @RequestParam LocalDateTime arrivalTime) {
+    	return flightService.getFlight(arrival, departureTime, arrivalTime);
+    }
 
-    // Autres méthodes pour modifier, supprimer, etc.
 }

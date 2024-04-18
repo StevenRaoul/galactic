@@ -14,7 +14,7 @@ public class Flight {
 	private String departureCity;
 	private String arrivalCity;
 	private String departureTime;
-	private String arrivaleTime;
+	private String arrivalTime;
 	private int departureAirport;
 	private int arrivalAirport;
 	private int plane;
@@ -26,7 +26,7 @@ public class Flight {
 		this.departureCity = departureCity;
 		this.arrivalCity = arrivalCity;
 		this.departureTime = departureTime;
-		this.arrivaleTime = arrivaleTime;
+		this.arrivalTime = arrivaleTime;
 		this.departureAirport = departureAirport;
 		this.arrivalAirport = arrivalAirport;
 		this.plane = plane;
@@ -66,11 +66,11 @@ public class Flight {
 	}
 
 	public String getArrivaleTime() {
-		return arrivaleTime;
+		return arrivalTime;
 	}
 
 	public void setArrivaleTime(String arrivaleTime) {
-		this.arrivaleTime = arrivaleTime;
+		this.arrivalTime = arrivaleTime;
 	}
 
 	public int getDepartureAirport() {
