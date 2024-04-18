@@ -1,5 +1,7 @@
 package com.jacoste.galactic.table;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Entity;
 
 @Entity
@@ -7,7 +9,7 @@ public class Client extends User {
 
 	private int passport;
 	
-	public Client(int id, String firstName, String lastName, String adress, String email, int phone, String birthday, int passport) {
+	public Client(int id, String firstName, String lastName, String adress, String email, int phone, LocalDateTime birthday, int passport) {
 		super(id, firstName, lastName, adress, email, phone, birthday);
 		this.passport = passport;
 	}

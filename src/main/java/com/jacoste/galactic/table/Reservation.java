@@ -15,6 +15,8 @@ public class Reservation {
 	private int flight;
 	private int client;
 	
+	public Reservation() {}
+	
 	public Reservation(int id, int flight, int client) {
 		this.id = id;
 		this.flight = flight;

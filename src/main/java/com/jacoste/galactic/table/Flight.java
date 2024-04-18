@@ -1,5 +1,7 @@
 package com.jacoste.galactic.table;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -13,14 +15,14 @@ public class Flight {
 	private int id;
 	private String departureCity;
 	private String arrivalCity;
-	private String departureTime;
-	private String arrivalTime;
+	private LocalDateTime departureTime;
+	private LocalDateTime arrivalTime;
 	private int departureAirport;
 	private int arrivalAirport;
 	private int plane;
 	private int capacity;
 	
-	public Flight(int id, String departureCity, String arrivalCity, String departureTime, String arrivaleTime, 
+	public Flight(int id, String departureCity, String arrivalCity, LocalDateTime departureTime, LocalDateTime arrivaleTime, 
 			int departureAirport, int arrivalAirport, int plane, int capacity) {
 		this.id = id;
 		this.departureCity = departureCity;
@@ -57,19 +59,19 @@ public class Flight {
 		this.arrivalCity = arrivalCity;
 	}
 
-	public String getDepartureTime() {
+	public LocalDateTime getDepartureTime() {
 		return departureTime;
 	}
 
-	public void setDepartureTime(String departureTime) {
+	public void setDepartureTime(LocalDateTime departureTime) {
 		this.departureTime = departureTime;
 	}
 
-	public String getArrivaleTime() {
+	public LocalDateTime getArrivaleTime() {
 		return arrivalTime;
 	}
 
-	public void setArrivaleTime(String arrivaleTime) {
+	public void setArrivaleTime(LocalDateTime arrivaleTime) {
 		this.arrivalTime = arrivaleTime;
 	}
 

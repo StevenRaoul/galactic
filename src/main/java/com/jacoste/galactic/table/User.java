@@ -1,5 +1,7 @@
 package com.jacoste.galactic.table;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,16 +18,16 @@ public abstract class User {
 	private String adress;
 	private String email;
 	private int phone;
-	private String birthday;
+	private LocalDateTime birthday;
 	
-	public User(int id, String firstName, String lastName, String adress, String email, int phone, String birthday) {
+	public User(int id, String firstName, String lastName, String adress, String email, int phone, LocalDateTime birthday2) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.adress = adress;
 		this.email = email;
 		this.phone = phone;
-		this.birthday = birthday;
+		this.birthday = birthday2;
 	}
 
 	public int getId() {
@@ -76,11 +78,11 @@ public abstract class User {
 		this.phone = phone;
 	}
 	
-	public String getBirthday() {
+	public LocalDateTime getBirthday() {
 		return birthday;
 	}
 	
-	public void setBirthday(String birthday) {
+	public void setBirthday(LocalDateTime birthday) {
 		this.birthday = birthday;
 	}
 	
