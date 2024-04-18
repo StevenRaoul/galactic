@@ -23,8 +23,8 @@ public class FlightService {
         return flightRepository.findAll();
     }
     
-    public List<Flight> getFlight(String arrival, LocalDateTime departureTime, LocalDateTime arrivalTime) {
-        return flightRepository.findByArrivalAndTime(arrival, departureTime, arrivalTime);
+    public List<Flight> getFlight(String arrivalCity, LocalDateTime departureTime, LocalDateTime arrivalTime) {
+        return flightRepository.findByArrivalAndTime(arrivalCity, departureTime, arrivalTime);
     }
 
 }

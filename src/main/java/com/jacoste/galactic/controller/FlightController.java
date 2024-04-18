@@ -27,10 +27,10 @@ public class FlightController {
         return flightService.getAllFights();
     }
     
-    public List<Flight> getFlight(@RequestParam String arrival,
+    public List<Flight> getFlight(@RequestParam String arrivalCity,
             @RequestParam LocalDateTime departureTime,
             @RequestParam LocalDateTime arrivalTime) {
-    	return flightService.getFlight(arrival, departureTime, arrivalTime);
+    	return flightService.getFlight(arrivalCity, departureTime, arrivalTime);
     }
 
 }

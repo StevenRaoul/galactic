@@ -35,8 +35,8 @@ public class ReservationService {
             		client.getLastName(),
             		client.getPassport(),
             		client.getBirthday(),
-            		flight.getArrivalCity(),
             		flight.getDepartureCity(),
+            		flight.getArrivalCity(),
             		flight.getDepartureTime(),
             		flight.getArrivaleTime());
         }

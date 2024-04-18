@@ -1,10 +1,8 @@
 package com.jacoste.galactic.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 import com.jacoste.galactic.service.ReservationService;
@@ -12,7 +10,7 @@ import com.jacoste.galactic.table.Flight;
 import com.jacoste.galactic.table.Reservation;
 import com.jacoste.galactic.table.Client;
 
-@Controller
+@RestController
 @RequestMapping("/reservation")
 public class ReservationController {
 
